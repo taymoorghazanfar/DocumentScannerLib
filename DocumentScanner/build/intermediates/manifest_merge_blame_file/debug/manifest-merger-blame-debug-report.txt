@@ -1,0 +1,57 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.zynksoftware.documentscanner" >
+5
+6    <uses-sdk
+7        android:minSdkVersion="21"
+7-->C:\Users\Funprime\Desktop\MultiToolsDocumentScanner\DocumentScanner\src\main\AndroidManifest.xml
+8        android:targetSdkVersion="32" />
+8-->C:\Users\Funprime\Desktop\MultiToolsDocumentScanner\DocumentScanner\src\main\AndroidManifest.xml
+9
+10    <uses-feature android:name="android.hardware.camera2" />
+10-->C:\Users\Funprime\Desktop\MultiToolsDocumentScanner\DocumentScanner\src\main\AndroidManifest.xml:5:5-61
+10-->C:\Users\Funprime\Desktop\MultiToolsDocumentScanner\DocumentScanner\src\main\AndroidManifest.xml:5:19-58
+11
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->C:\Users\Funprime\Desktop\MultiToolsDocumentScanner\DocumentScanner\src\main\AndroidManifest.xml:6:5-64
+12-->C:\Users\Funprime\Desktop\MultiToolsDocumentScanner\DocumentScanner\src\main\AndroidManifest.xml:6:22-62
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->C:\Users\Funprime\Desktop\MultiToolsDocumentScanner\DocumentScanner\src\main\AndroidManifest.xml:7:5-79
+13-->C:\Users\Funprime\Desktop\MultiToolsDocumentScanner\DocumentScanner\src\main\AndroidManifest.xml:7:22-77
+14    <uses-permission
+14-->C:\Users\Funprime\Desktop\MultiToolsDocumentScanner\DocumentScanner\src\main\AndroidManifest.xml:8:5-94
+15        android:name="android.permission.READ_PHONE_STATE"
+15-->C:\Users\Funprime\Desktop\MultiToolsDocumentScanner\DocumentScanner\src\main\AndroidManifest.xml:8:22-72
+16        tools:node="remove" />
+16-->C:\Users\Funprime\Desktop\MultiToolsDocumentScanner\DocumentScanner\src\main\AndroidManifest.xml:8:73-92
+17
+18    <application
+18-->C:\Users\Funprime\Desktop\MultiToolsDocumentScanner\DocumentScanner\src\main\AndroidManifest.xml:10:5-26:19
+19        android:hardwareAccelerated="true"
+19-->C:\Users\Funprime\Desktop\MultiToolsDocumentScanner\DocumentScanner\src\main\AndroidManifest.xml:13:9-43
+20        android:largeHeap="true"
+20-->C:\Users\Funprime\Desktop\MultiToolsDocumentScanner\DocumentScanner\src\main\AndroidManifest.xml:12:9-33
+21        android:requestLegacyExternalStorage="true"
+21-->C:\Users\Funprime\Desktop\MultiToolsDocumentScanner\DocumentScanner\src\main\AndroidManifest.xml:11:9-52
+22        tools:ignore="UnusedAttribute" >
+22-->C:\Users\Funprime\Desktop\MultiToolsDocumentScanner\DocumentScanner\src\main\AndroidManifest.xml:14:9-39
+23        <activity
+23-->C:\Users\Funprime\Desktop\MultiToolsDocumentScanner\DocumentScanner\src\main\AndroidManifest.xml:16:9-19:52
+24            android:name="com.zynksoftware.documentscanner.ui.scan.InternalScanActivity"
+24-->C:\Users\Funprime\Desktop\MultiToolsDocumentScanner\DocumentScanner\src\main\AndroidManifest.xml:17:13-57
+25            android:screenOrientation="portrait"
+25-->C:\Users\Funprime\Desktop\MultiToolsDocumentScanner\DocumentScanner\src\main\AndroidManifest.xml:18:13-49
+26            android:theme="@style/ActivityTheme" />
+26-->C:\Users\Funprime\Desktop\MultiToolsDocumentScanner\DocumentScanner\src\main\AndroidManifest.xml:19:13-49
+27        <activity
+27-->C:\Users\Funprime\Desktop\MultiToolsDocumentScanner\DocumentScanner\src\main\AndroidManifest.xml:21:9-24:52
+28            android:name="com.zynksoftware.documentscanner.ScanActivity"
+28-->C:\Users\Funprime\Desktop\MultiToolsDocumentScanner\DocumentScanner\src\main\AndroidManifest.xml:22:13-41
+29            android:screenOrientation="portrait"
+29-->C:\Users\Funprime\Desktop\MultiToolsDocumentScanner\DocumentScanner\src\main\AndroidManifest.xml:23:13-49
+30            android:theme="@style/ActivityTheme" />
+30-->C:\Users\Funprime\Desktop\MultiToolsDocumentScanner\DocumentScanner\src\main\AndroidManifest.xml:24:13-49
+31    </application>
+32
+33</manifest>

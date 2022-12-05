@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.DocViewerActivity">
+
+    <include
+        layout="@layout/header_doc_viewer"
+        android:id="@+id/header"/>
+
+    <include
+        layout="@layout/activity_doc_viewer_content"
+        android:id="@+id/content"/>
+
+    <include
+        android:id="@+id/banner_ad"
+        layout="@layout/ad_banner" />
+
+    <include
+        layout="@layout/activity_doc_viewer_error"
+        android:visibility="gone"
+        android:id="@+id/layout_error"/>
+
+</RelativeLayout>
