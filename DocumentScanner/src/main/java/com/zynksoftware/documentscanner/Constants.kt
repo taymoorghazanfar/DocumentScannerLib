@@ -10,6 +10,6 @@ class Constants {
 
         var ROOT_DIR = Environment
             .getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)
-            .path + "/" + APP_NAME
+            .path + "/"
     }
 }

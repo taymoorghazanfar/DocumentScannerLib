@@ -23,7 +23,6 @@ package com.zynksoftware.documentscanner.ui.scan
 import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Bundle
-import android.os.Environment
 import android.util.Log
 import android.widget.FrameLayout
 import androidx.appcompat.app.AppCompatActivity
@@ -41,10 +40,6 @@ import com.zynksoftware.documentscanner.ui.camerascreen.CameraScreenFragment
 import com.zynksoftware.documentscanner.ui.components.ProgressView
 import com.zynksoftware.documentscanner.ui.imagecrop.ImageCropFragment
 import com.zynksoftware.documentscanner.ui.imageprocessing.ImageProcessingFragment
-import id.zelory.compressor.Compressor
-import id.zelory.compressor.constraint.format
-import id.zelory.compressor.constraint.quality
-import id.zelory.compressor.constraint.size
 import id.zelory.compressor.extension
 import id.zelory.compressor.saveBitmap
 import kotlinx.coroutines.CoroutineScope
@@ -54,6 +49,8 @@ import kotlinx.coroutines.launch
 import java.io.File
 
 abstract class InternalScanActivity : AppCompatActivity() {
+
+    private var appName:String = ""
 
     abstract fun onError(error: DocumentScannerErrorModel)
     abstract fun onSuccess(scannerResults: ScannerResults)
@@ -145,7 +142,8 @@ abstract class InternalScanActivity : AppCompatActivity() {
 
             transformedImage?.let {
                 transformedImageFile =
-                    File(Constants.ROOT_DIR, "DOC_${System.currentTimeMillis()}.${imageType.extension()}")
+                    File(Constants.ROOT_DIR + this@InternalScanActivity.appName,
+                        "DOC_${System.currentTimeMillis()}.${imageType.extension()}")
                 saveBitmap(it, transformedImageFile!!, imageType, imageQuality)
             }
 
@@ -167,7 +165,10 @@ abstract class InternalScanActivity : AppCompatActivity() {
         }
     }
 
-    internal fun addFragmentContentLayoutInternal(uri: Uri?) {
+    internal fun addFragmentContentLayoutInternal(appName:String, uri: Uri?) {
+
+        this.appName = appName
+
         val frameLayout = FrameLayout(this)
         frameLayout.id = R.id.zdcContent
         addContentView(

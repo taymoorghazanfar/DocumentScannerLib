@@ -375,9 +375,10 @@ class DocScannerHomeActivity : AppCompatActivity(), IDocClickListener, IScanOpti
 
         bottomSheet?.dismiss()
 
+        val i = Intent(this@DocScannerHomeActivity, AppScanActivity::class.java)
+        i.putExtra("app_name", resources.getString(R.string.app_name))
         startActivityForResult(
-            Intent(this@DocScannerHomeActivity, AppScanActivity::class.java),
-            REQUEST_CODE_SCAN
+            i, REQUEST_CODE_SCAN
         )
     }
 
@@ -460,6 +461,7 @@ class DocScannerHomeActivity : AppCompatActivity(), IDocClickListener, IScanOpti
                     if (imageUri != null) {
 
                         val i = Intent(this@DocScannerHomeActivity, AppScanActivity::class.java)
+                        i.putExtra("app_name", resources.getString(R.string.app_name))
                         i.putExtra("uri", imageUri)
                         startActivityForResult(i, REQUEST_CODE_SCAN)
                     }

@@ -14,9 +14,11 @@ class AppScanActivity : ScanActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_app_scan)
 
+        val appName: String = intent.getStringExtra("app_name")!!
+
         val uri: Uri? = intent.getParcelableExtra("uri") as Uri?
 
-        addFragmentContentLayout(uri)
+        addFragmentContentLayout(appName,uri)
     }
 
     override fun onError(error: DocumentScannerErrorModel) {

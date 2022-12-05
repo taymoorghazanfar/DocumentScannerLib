@@ -24,7 +24,7 @@ import com.zynksoftware.documentscanner.ui.scan.InternalScanActivity
 
 abstract class ScanActivity : InternalScanActivity() {
 
-    fun addFragmentContentLayout(uri: Uri?) {
-        addFragmentContentLayoutInternal(uri)
+    fun addFragmentContentLayout(appName:String, uri: Uri?) {
+        addFragmentContentLayoutInternal(appName, uri)
     }
 }
