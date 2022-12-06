@@ -76,6 +76,7 @@ abstract class InternalScanActivity : AppCompatActivity() {
     internal var shouldCallOnClose = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        setTheme(R.style.ActivityTheme);
         super.onCreate(savedInstanceState)
         val sessionManager = SessionManager(this)
         imageType = sessionManager.getImageType()
