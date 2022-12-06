@@ -20,11 +20,18 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SO
 package com.zynksoftware.documentscanner
 
 import android.net.Uri
+import android.util.Log
 import com.zynksoftware.documentscanner.ui.scan.InternalScanActivity
+import org.opencv.android.OpenCVLoader
 
 abstract class ScanActivity : InternalScanActivity() {
 
     fun addFragmentContentLayout(appName:String, uri: Uri?) {
-        addFragmentContentLayoutInternal(appName, uri)
+
+        if (OpenCVLoader.initDebug()) {
+
+            Log.d("myTag", "OpenCV loaded")
+            addFragmentContentLayoutInternal(appName, uri)
+        }
     }
 }

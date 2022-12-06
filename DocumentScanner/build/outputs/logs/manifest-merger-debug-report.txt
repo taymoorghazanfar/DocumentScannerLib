@@ -1,8 +1,8 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml:1:1-28:12
-INJECTED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml:1:1-28:12
-INJECTED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml:1:1-28:12
+ADDED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml:1:1-26:12
 	package
 		ADDED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml:3:5-47
 		INJECTED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml
@@ -30,7 +30,7 @@ ADDED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentSca
 	android:name
 		ADDED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml:8:22-72
 application
-ADDED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml:10:5-26:19
+ADDED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml:10:5-24:19
 	android:requestLegacyExternalStorage
 		ADDED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml:11:9-52
 	android:hardwareAccelerated
@@ -40,21 +40,17 @@ ADDED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentSca
 	android:largeHeap
 		ADDED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml:12:9-33
 activity#com.zynksoftware.documentscanner.ui.scan.InternalScanActivity
-ADDED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml:16:9-19:52
+ADDED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml:16:9-18:52
 	android:screenOrientation
 		ADDED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml:18:13-49
-	android:theme
-		ADDED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml:19:13-49
 	android:name
 		ADDED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml:17:13-57
 activity#com.zynksoftware.documentscanner.ScanActivity
-ADDED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml:21:9-24:52
+ADDED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml:20:9-22:52
 	android:screenOrientation
-		ADDED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml:23:13-49
-	android:theme
-		ADDED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml:24:13-49
+		ADDED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml:22:13-49
 	android:name
-		ADDED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml:22:13-41
+		ADDED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml:21:13-41
 uses-sdk
 INJECTED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Funprime\Desktop\MultiToolsDocumentScanner - Lib\DocumentScanner\src\main\AndroidManifest.xml

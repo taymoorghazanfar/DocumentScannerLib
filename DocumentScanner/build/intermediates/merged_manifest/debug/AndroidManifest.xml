@@ -22,12 +22,10 @@
         tools:ignore="UnusedAttribute" >
         <activity
             android:name="com.zynksoftware.documentscanner.ui.scan.InternalScanActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/ActivityTheme" />
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.zynksoftware.documentscanner.ScanActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/ActivityTheme" />
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
