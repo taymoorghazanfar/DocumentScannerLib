@@ -19,4 +19,4 @@ rootProject.name = "Multi Tools Document Scanner"
 include ':app'
 include ':DocumentScanner'
 include ':swipe-reveal-layout'
-include ':OpenCvSdk'
+//include ':OpenCvSdk'
