@@ -33,7 +33,7 @@ class RenameDocDialog(currentName: String, listener: IRenameDialogListener) : Di
             dialog!!.window!!.requestFeature(Window.FEATURE_NO_TITLE)
         }
 
-        return inflater.inflate(R.layout.dialog_rename_doc, container, false)
+        return inflater.inflate(R.layout.dialog_rename_doc_dm, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

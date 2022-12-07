@@ -24,7 +24,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.multitoolsdocumentscanner.Globals
 import com.example.multitoolsdocumentscanner.R
-import com.example.multitoolsdocumentscanner.databinding.ActivityDocScannerHomeBinding
+import com.example.multitoolsdocumentscanner.databinding.ActivityDocScannerHomeDmBinding
 import com.example.multitoolsdocumentscanner.ui.adapters.IDocClickListener
 import com.example.multitoolsdocumentscanner.ui.adapters.RecyclerAdapterDocs
 import com.example.multitoolsdocumentscanner.ui.decorators.EqualSpacingItemDecoration
@@ -45,7 +45,7 @@ import java.io.FileNotFoundException
 class DocScannerHomeActivity : AppCompatActivity(), IDocClickListener, IScanOptionsListener,
     IRenameDialogListener, IDeleteDialogListener {
 
-    private lateinit var binding: ActivityDocScannerHomeBinding
+    private lateinit var binding: ActivityDocScannerHomeDmBinding
     private lateinit var viewModel: DocsViewModel
     private lateinit var resultLauncherPickDoc: ActivityResultLauncher<Intent>
 
@@ -59,7 +59,7 @@ class DocScannerHomeActivity : AppCompatActivity(), IDocClickListener, IScanOpti
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityDocScannerHomeBinding.inflate(layoutInflater)
+        binding = ActivityDocScannerHomeDmBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setupHeader()

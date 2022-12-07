@@ -29,7 +29,7 @@ class DeleteDocDialog(listener: IDeleteDialogListener) : DialogFragment() {
             dialog!!.window!!.requestFeature(Window.FEATURE_NO_TITLE)
         }
 
-        return inflater.inflate(R.layout.dialog_delete_doc, container, false)
+        return inflater.inflate(R.layout.dialog_delete_doc_dm, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

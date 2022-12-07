@@ -22,7 +22,7 @@ class ScanOptionsBottomSheet : RoundedBottomSheetDialogFragment() {
 
     ): View {
 
-        val view = inflater.inflate(R.layout.bottom_sheet_scan_options, container, false)
+        val view = inflater.inflate(R.layout.bottom_sheet_scan_options_dm, container, false)
 
         buttonCamera = view.findViewById(R.id.button_camera)
         buttonGallery = view.findViewById(R.id.button_gallery)

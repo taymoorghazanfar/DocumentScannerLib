@@ -13,7 +13,7 @@ import androidx.documentfile.provider.DocumentFile
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.example.multitoolsdocumentscanner.Globals
-import com.example.multitoolsdocumentscanner.databinding.ActivityDocViewerBinding
+import com.example.multitoolsdocumentscanner.databinding.ActivityDocViewerDmBinding
 import com.example.multitoolsdocumentscanner.ui.dialogs.RenameDocDialog
 import com.example.multitoolsdocumentscanner.ui.interfaces.IRenameDialogListener
 import com.example.multitoolsdocumentscanner.utils.DeviceDimensionHelper
@@ -27,14 +27,14 @@ import java.io.FileDescriptor
 
 class DocViewerActivity : AppCompatActivity(), IRenameDialogListener {
 
-    private lateinit var binding: ActivityDocViewerBinding
+    private lateinit var binding: ActivityDocViewerDmBinding
     private lateinit var viewModel: DocsViewModel
     private var doc: DocumentFile? = null
     private var renameDialog: RenameDocDialog? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityDocViewerBinding.inflate(layoutInflater)
+        binding = ActivityDocViewerDmBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         getData()

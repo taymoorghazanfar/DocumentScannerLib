@@ -12,7 +12,7 @@ class AppScanActivity : ScanActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_app_scan)
+        setContentView(R.layout.activity_app_scan_dm)
 
         val appName: String = intent.getStringExtra("app_name")!!
 

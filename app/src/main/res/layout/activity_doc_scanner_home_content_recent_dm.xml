@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/banner_ad"
+    android:layout_below="@+id/header">
+
+    <TextView
+        android:id="@+id/text_view_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/inter_medium"
+        android:paddingStart="10dp"
+        android:paddingTop="40dp"
+        android:paddingEnd="10dp"
+        android:text="New"
+        android:textColor="@color/text_light"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/button_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_new"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/btn_open_doc_large_dm" />
+
+    <TextView
+        android:id="@+id/text_view_documents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_scan"
+        android:fontFamily="@font/inter_medium"
+        android:paddingStart="10dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="20dp"
+        android:text="Documents"
+        android:textColor="@color/text_light"
+        android:textSize="16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text_view_documents" />
+
+</RelativeLayout>
