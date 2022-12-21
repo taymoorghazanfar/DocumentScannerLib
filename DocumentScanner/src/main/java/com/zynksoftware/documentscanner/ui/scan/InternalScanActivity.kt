@@ -145,7 +145,7 @@ abstract class InternalScanActivity : AppCompatActivity() {
                 transformedImageFile =
                     File(Constants.ROOT_DIR + this@InternalScanActivity.appName,
                         "DOC_${System.currentTimeMillis()}.${imageType.extension()}")
-                saveBitmap(it, transformedImageFile!!, imageType, imageQuality)
+                saveBitmap(it, transformedImageFile!!, imageType, 80)
             }
 
             val scannerResults =
