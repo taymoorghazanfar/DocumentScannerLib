@@ -50,7 +50,7 @@ import java.io.File
 
 abstract class InternalScanActivity : AppCompatActivity() {
 
-    private var appName:String = ""
+    private var appName: String = ""
 
     abstract fun onError(error: DocumentScannerErrorModel)
     abstract fun onSuccess(scannerResults: ScannerResults)
@@ -90,7 +90,7 @@ abstract class InternalScanActivity : AppCompatActivity() {
         originalImageFile.delete()
     }
 
-    private fun showCameraScreen(uri:Uri?) {
+    private fun showCameraScreen(uri: Uri?) {
 
         val cameraScreenFragment = CameraScreenFragment.newInstance(uri)
         addFragmentToBackStack(cameraScreenFragment, CAMERA_SCREEN_FRAGMENT_TAG)
@@ -143,9 +143,11 @@ abstract class InternalScanActivity : AppCompatActivity() {
 
             transformedImage?.let {
                 transformedImageFile =
-                    File(Constants.ROOT_DIR + this@InternalScanActivity.appName,
-                        "DOC_${System.currentTimeMillis()}.${imageType.extension()}")
-                saveBitmap(it, transformedImageFile!!, imageType, 80)
+                    File(
+                        Constants.ROOT_DIR + this@InternalScanActivity.appName,
+                        "DOC_${System.currentTimeMillis()}.${imageType.extension()}"
+                    )
+                saveBitmap(it, transformedImageFile!!, imageType, 30)
             }
 
             val scannerResults =
@@ -166,7 +168,7 @@ abstract class InternalScanActivity : AppCompatActivity() {
         }
     }
 
-    internal fun addFragmentContentLayoutInternal(appName:String, uri: Uri?) {
+    internal fun addFragmentContentLayoutInternal(appName: String, uri: Uri?) {
 
         this.appName = appName
 
